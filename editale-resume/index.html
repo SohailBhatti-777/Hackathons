@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1><center><strong>Resume Builder</strong> </center></h1>
+        <form id="resume-form">
+            <section>
+                <h2>Personal Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter Your Name" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter Your Email Address" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" placeholder="Enter Phone Number" id="phone" name="phone" required>
+
+                <label for="location">Location:</label>
+                <input type="text" placeholder="Enter Your Address" id="location" name="location" required>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <label for="education">Education:</label>
+                <textarea id="education" placeholder="Enter Your Academic Qualification" name="education" required></textarea>
+            </section>
+
+            <section>
+                <h2>Work Experience</h2>
+                <label for="work-experience">Work Experience:</label>
+                <textarea id="work-experience" name="work-experience" required></textarea>                
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g. Python, JavaScript, HTML" required>
+            </section>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <div id="resume-output" class="resume-container" style="display: none;">
+        <!-- The dynamic resume will be generated here -->
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
