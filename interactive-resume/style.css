@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.left-column {
+  width: 30%;
+  background-color: #ebebeb;
+  padding: 20px;
+  text-align: center;
+}
+
+.left-column img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.right-column {
+  width: 70%;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  color: #ffcc00;
+  font-size: 24px;
+}
+
+h2 {
+  color: #ff9900;
+  font-size: 20px;
+}
+
+.contact, .certifications {
+  margin: 20px 0;
+}
+
+.contact h3, .certifications h3 {
+  background-color: #555555;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.certifications ul {
+  padding-left: 15px;
+  list-style-type: square;
+}
+
+.right-column h3 {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 5px;
+  font-size: 18px;
+}
+
+button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+p, ul {
+  margin: 10px 0;
+}
+
+
+
+#skills,
+#work-experience {
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+  .resume-container {
+      flex-direction: column;
+  }
+
+  .left-column, .right-column {
+      width: 100%;
+  }
+}
